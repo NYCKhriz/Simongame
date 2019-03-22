@@ -25,6 +25,19 @@ body {
   border: 10px solid black;
   border-radius: 20%;
 }
+.btn2 {
+  text-align: center;
+  padding: auto;
+  margin: 10px;
+  display: inline-block;
+  height: 100px;
+  width: 150px;
+  border: 10px solid whitesmoke;
+  border-radius: 20%;
+  font-size: 18px;
+  font-family: "Press Start 2P";
+  background-color: whitesmoke;
+}
 
 .game-over {
   background-color: red;

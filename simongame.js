@@ -45,6 +45,14 @@ function playSound(name) {
     audio.play();
 }
 
+$(".btn2").on("click", function(){
+    if(!started) {
+        $("h1").html("Level " + level);
+        nextSequence();
+        started = true;
+        $(".btn2").fadeOut(10);
+    }
+});
 
 $(document).keypress(function() {
     if(!started) {
@@ -75,6 +83,7 @@ function checkAnswer(currentLevel){
         $("#level-title").html("Game Over, Press Any Key to Restart");
         playSound("wrong");
         startOver();
+        $(".btn2").fadeIn(10);
 
     }};
 
